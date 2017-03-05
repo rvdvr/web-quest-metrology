@@ -1,0 +1,10 @@
+@mixin font($font-size: 16px, $style: regular) {
+    @if $style == pt-reg {
+        font: $font-size 'pt_sansregular', Arial, sans-serif;
+    }
+
+    @if $style == ub-bold {
+        font: $font-size 'ubuntubold', Arial, sans-serif;
+    }
+
+}
