@@ -3,18 +3,16 @@ include ../mixins/icons
 doctype html
 head
   meta(charset="utf-8")
-  title Web quest
+  title Web quest | Welcome
   meta(name="description" content="" )
   meta(name="keywords" content="")
   include ../meta/head
 body
   .wrapper
-    include ../common/popup
-    include index/sections/header
-    include index/sections/advantage
-    include index/sections/services
-    include index/sections/contacts
-  include ../common/footer
+    include index/header
+    include ../common/header-nav
+    include ../common/sidebar-nav
+
 
   script(src='assets/js/foundation.js' defer)
   script(src='assets/js/app.js' defer)

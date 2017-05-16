@@ -24,21 +24,11 @@ body {
 	min-width: $container-width;
 }
 
-
 .container {
 	width: 1020px;
 	margin: 0 auto;
 	height: 100%;
 	position: relative;
-}
-
-.highlighter {
-	color: $blue;
-}
-
-.highlighter-text {
-  font-weight: 600;
-  color: $dark-blue;
 }
 
 li {
