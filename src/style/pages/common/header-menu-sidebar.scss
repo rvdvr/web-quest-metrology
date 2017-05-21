@@ -1,0 +1,83 @@
+.common-menu__sidebar {
+  width: 300px;
+  height: 100vh;
+  background: $white;
+  position: absolute;
+  right: -300px;
+  z-index: 100;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, .6);
+  transition: right .2s, opacity .2s;
+}
+
+.common-menu__sidebar_active {
+  right: 0;
+}
+
+.common-menu__sidebar-btn {
+  margin: 85px 0 70px 0;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.common-menu__sidebar-burger {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    .sidebar-burger__item {
+      opacity: .6;
+    }
+  }
+}
+
+.sidebar-burger__item {
+  width: 40px;
+  height: 8px;
+  background: $red;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: opacity .3s;
+}
+
+//
+
+.common-menu__list {
+  padding-left: 30px;
+}
+
+.common-menu__link {
+  color: $blue-main;
+  @include font(30px, open-reg);
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  text-decoration: none;
+  transition: color .3s;
+  &:hover {
+    color: $orange;
+    .common-menu__item svg {
+      fill: $orange;
+    }
+  }
+}
+
+.common-menu__item svg {
+  fill: $blue-main;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.common-menu__item .icon-rocket {
+  width: 33px;
+  height: 40px;
+}

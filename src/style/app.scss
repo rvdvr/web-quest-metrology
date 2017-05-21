@@ -1,6 +1,9 @@
 //vars
+$white: #FCFCFC;
+$blue-main: #10416D;
 $blue: #11436E;
 $red: #980051;
+$orange: #F1543F;
 
 
 //misc
@@ -11,5 +14,10 @@ $red: #980051;
 
 
 //layout
+//common
+//header-menu
+@import "pages/common/header-menu-btn";
+@import "pages/common/header-menu-sidebar";
+
 //index
 @import "pages/index/start-section";

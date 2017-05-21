@@ -1,0 +1,33 @@
+.common-menu__btn {
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 50%;
+  background: rgba($orange, .9);
+  position: fixed;
+  z-index: 10;
+  top: 80px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.common-menu__btn-burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.burger__item {
+  width: 40px;
+  height: 8px;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 5px;
+}
