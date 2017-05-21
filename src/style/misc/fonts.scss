@@ -1,105 +1,78 @@
 @font-face {
-    font-family: 'pt_sansbold';
-    src: url('pt_sans-web-bold-webfont.woff2') format('woff2'),
-         url('pt_sans-web-bold-webfont.woff') format('woff');
+    font-family: 'junegullregular';
+    src: url('../fonts/junegull_rg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'pt_sansbold_italic';
-    src: url('pt_sans-web-bolditalic-webfont.woff2') format('woff2'),
-         url('pt_sans-web-bolditalic-webfont.woff') format('woff');
+    font-family: 'modakregular';
+    src: url('../fonts/modak-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'pt_sansitalic';
-    src: url('pt_sans-web-italic-webfont.woff2') format('woff2'),
-         url('pt_sans-web-italic-webfont.woff') format('woff');
+    font-family: 'nautilus_pompiliusregular';
+    src: url('../fonts/nautilus-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'pt_sansregular';
-    src: url('../pt_sans-web-regular-webfont.woff2') format('woff2'),
-         url('../pt_sans-web-regular-webfont.woff') format('woff');
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ubuntubold';
-    src: url('../ubuntu-bold-webfont.woff2') format('woff2'),
-         url('../ubuntu-bold-webfont.woff') format('woff');
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ubuntubold_italic';
-    src: url('ubuntu-bolditalic-webfont.woff2') format('woff2'),
-         url('ubuntu-bolditalic-webfont.woff') format('woff');
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ubuntuitalic';
-    src: url('ubuntu-italic-webfont.woff2') format('woff2'),
-         url('ubuntu-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ubuntulight';
-    src: url('ubuntu-light-webfont.woff2') format('woff2'),
-         url('ubuntu-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ubuntulight_italic';
-    src: url('ubuntu-lightitalic-webfont.woff2') format('woff2'),
-         url('ubuntu-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ubuntumedium';
-    src: url('ubuntu-medium-webfont.woff2') format('woff2'),
-         url('ubuntu-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ubuntumedium_italic';
-    src: url('ubuntu-mediumitalic-webfont.woff2') format('woff2'),
-         url('ubuntu-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ubunturegular';
-    src: url('ubuntu-regular-webfont.woff2') format('woff2'),
-         url('ubuntu-regular-webfont.woff') format('woff');
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @mixin font($font-size: 16px, $style: regular) {
-    @if $style == ptreg {
-        font: $font-size 'pt_sansregular', Arial, sans-serif;
+    @if $style == june {
+        font: $font-size 'junegullregular', Arial, sans-serif;
     }
 
-    @if $style == ub_bold {
-        font: $font-size 'ubuntubold', Arial, sans-serif;
+    @if $style == modak {
+        font: $font-size 'modakregular', Arial, sans-serif;
+    }
+
+    @if $style == nautil {
+        font: $font-size 'nautilus_pompiliusregular', Arial, sans-serif;
+    }
+
+    @if $style == open-bold {
+        font: $font-size 'open_sansbold', Arial, sans-serif;
+    }
+
+    @if $style == open-light {
+        font: $font-size 'open_sanslight', Arial, sans-serif;
+    }
+
+    @if $style == open-reg {
+        font: $font-size 'open_sansregular', Arial, sans-serif;
+    }
+
+    @if $style == open-sbold {
+        font: $font-size 'open_sanssemibold', Arial, sans-serif;
     }
 }
