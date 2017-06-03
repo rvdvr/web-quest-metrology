@@ -1,0 +1,51 @@
+main.select-role#select-role
+  .container
+    h2.select-role__title Выберите подходящую вам роль
+    section.select-role__slider
+      ul.select-role__slider-list
+        li.select-role__slide
+          .select-role__slide-role
+            .select-role-slide__prev
+              img(src="assets/img/technicist.svg").select-role-slide__prev-img
+            .select-role-slide__desc
+              h3.select-role-slide__desc-title Техник ИТЦ
+              ul.select-role-slide__desc-list
+                li.select-role-slide__desc-item проверяет этикетки
+                li.select-role-slide__desc-item расшифровывает маркировочные знаки
+                li.select-role-slide__desc-item представляет результат в виде презентации 
+              a(href="").select-role-slide__desc-link
+                +icon('checked')
+                .select-role-slide__desc-link-text Выбрать
+        li.select-role__slide
+          .select-role__slide-role
+            .select-role-slide__prev
+              img(src="assets/img/lawyer.svg").select-role-slide__prev-img
+            .select-role-slide__desc
+              h3.select-role-slide__desc-title Юрист
+              ul.select-role-slide__desc-list
+                li.select-role-slide__desc-item изучает технический регламент Таможенного союза "ЭМС ТС"
+                li.select-role-slide__desc-item представляет результат в виде презентации 
+              a(href="").select-role-slide__desc-link
+                +icon('checked')
+                .select-role-slide__desc-link-text Выбрать
+        li.select-role__slide
+          .select-role__slide-role
+            .select-role-slide__prev
+              img(src="assets/img/expert.svg").select-role-slide__prev-img
+            .select-role-slide__desc
+              h3.select-role-slide__desc-title Эксперт
+              ul.select-role-slide__desc-list
+                li.select-role-slide__desc-item готовит краткую справку о понятии "ЭМС ТС"
+                li.select-role-slide__desc-item представляет результат в виде презентации 
+              a(href="").select-role-slide__desc-link
+                +icon('checked')
+                .select-role-slide__desc-link-text Выбрать
+      .select-role__slide-arrows
+        .select-role__slide-arrow-prev
+          +icon('prev-arrow')
+        .select-role__slide-arrow-next
+          +icon('next-arrow')
+    //- .select-role__bottom
+    //-   a(href="#").select-role__bottom-btn.btn-common#slide-section
+    //-     +icon('')
+    //-     span.select-role__bottom-btn-text Перейти к выбору роли

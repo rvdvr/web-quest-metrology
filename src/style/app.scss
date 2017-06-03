@@ -2,6 +2,7 @@
 $white: #FCFCFC;
 $blue-main: #10416D;
 $blue: #11436E;
+$azure: #3385CC;
 $red: #980051;
 $orange: #F1543F;
 
@@ -11,6 +12,7 @@ $orange: #F1543F;
 @import "misc/mixins";
 @import "misc/normalize";
 @import "misc/adjustment";
+@import "misc/slick";
 
 
 //layout
@@ -21,3 +23,6 @@ $orange: #F1543F;
 
 //index
 @import "pages/index/start-section";
+@import "pages/index/situation";
+@import "pages/index/role";
+@import "pages/index/help";

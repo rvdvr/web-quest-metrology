@@ -1,0 +1,21 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1543f;
+      }
+
+      .cls-2 {
+        fill: #efce4a;
+      }
+
+      .cls-3 {
+        fill: #424a60;
+      }
+    </style>
+  </defs>
+  <title>time</title>
+  <circle class="cls-1" cx="29" cy="29" r="29"/>
+  <path class="cls-2" d="M0,29c0,.3,0,.59,0,.88H29V0A29,29,0,0,0,0,29Z"/>
+  <path class="cls-3" d="M29,5a1,1,0,0,0-1,1V29H13a1,1,0,0,0,0,2H29a1,1,0,0,0,1-1V6A1,1,0,0,0,29,5Z"/>
+</svg>

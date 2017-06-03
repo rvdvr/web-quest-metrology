@@ -1,0 +1,139 @@
+.select-role {
+  background: $azure;
+  padding: 65px 0;
+  box-sizing: border-box;
+}
+
+.select-role__title {
+  color: #fff;
+  @include font(45px, june);
+  text-align: left;
+  margin-bottom: 30px;
+  &:after {
+    content: "";
+    width: 200px;
+    height: 5px;
+    background: #fff;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+}
+
+.select-role__slider {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.select-role__slide-role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-role-slide__prev {
+  width: 45%;
+}
+
+.select-role-slide__prev-img {
+  width: 100%;
+}
+
+.select-role-slide__desc {
+  width: 40%;
+}
+
+.select-role-slide__desc-title {
+  color: #fff;
+  @include font(30px, open-sbold);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.select-role-slide__desc-list {
+  padding-left: 10px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.select-role-slide__desc-item {
+  color: #fff;
+  @include font(22px, open-reg);
+  list-style-type: disc;
+  padding-bottom: 15px;
+}
+
+.select-role-slide__desc-link {
+  color: #fff;
+  background: $red;
+  border-radius: 3px;
+  padding: 15px 25px;
+  text-decoration: none;
+
+  .icon {
+    fill: #fff;
+    width: 18px;
+    height: 14px;
+    margin-right: 5px;
+  }
+}
+
+.select-role-slide__desc-link-text {
+  display: inline-block;
+}
+
+.select-role__slide-arrow-prev {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  left: 0;
+  &:hover {
+    .icon {
+      opacity: 1;
+    }
+  }
+}
+
+.select-role__slide-arrow-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  right: 0;
+  &:hover {
+    .icon {
+      opacity: 1;
+    }
+  }
+}
+
+.select-role__slide-arrows {
+  cursor: pointer;
+  .icon {
+    fill: #fff;
+    opacity: .4;
+    width: 55px;
+    height: 45px;
+    transition: opacity .3s;
+  }
+}
+
+// .select-role__bottom {
+//   display: flex;
+//   justify-content: center;
+// }
+//
+// .select-role__bottom-btn {
+//   color: #fff;
+//   @include font(22px, open-reg);
+//   border: 2px solid $blue-main;
+//   padding: 14px 22px;
+//
+//   .icon {
+//     width: 20px;
+//     height: 20px;
+//     margin-right: 10px;
+//     fill: $blue-main;
+//   }
+// }

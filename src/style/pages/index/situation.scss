@@ -1,0 +1,66 @@
+.situation-section {
+  padding: 65px 0;
+}
+
+.situation-section__title {
+  color: $blue-main;
+  @include font(45px, june);
+  text-align: right;
+  margin-bottom: 60px;
+  &:after {
+    content: "";
+    width: 200px;
+    height: 5px;
+    background: $blue-main;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+}
+
+.situation-section__desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.situation-section__desc-text {
+  color: $blue-main;
+  @include font(30px, open-reg);
+  width: 82%;
+  margin: 0 0 60px 0;
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.situation-section__desc-img {
+  width: 15%;
+}
+
+.situation-section__desc-img-pic {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.situation-section__bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.situation-section__bottom-btn {
+  color: $blue-main;
+  @include font(22px, open-reg);
+  border: 2px solid $blue-main;
+  padding: 14px 22px;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: $blue-main;
+  }
+}
