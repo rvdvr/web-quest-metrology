@@ -1,0 +1,56 @@
+.help-section {
+  background: $red;
+  padding: 65px 0;
+  box-sizing: border-box;
+}
+
+.help-section__title {
+  color: #fff;
+  @include font(45px, june);
+  text-align: center;
+  margin-bottom: 80px;
+  &:after {
+    content: "";
+    width: 200px;
+    height: 5px;
+    background: #fff;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -98px;
+    top: 60px;
+  }
+}
+
+.accordion__list {
+  text-align: center;
+}
+
+.accordion__trigger {
+  color: #fff;
+  @include font(40px, open-light);
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.accordion__trigger_active {
+  border: 2px solid #fff;
+}
+
+.accordion__content {
+  display: none;
+  margin-bottom: 35px;
+  color: #fff;
+  @include font(25px, open-reg);
+}
+
+.accordion__content-item {
+  text-align: left;
+  list-style-type: decimal;
+  padding: 10px 0;
+}

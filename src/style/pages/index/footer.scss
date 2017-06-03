@@ -1,0 +1,17 @@
+.footer {
+  height: 100px;
+  background: $red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -50px 0 0 0;
+  box-sizing: border-box;
+}
+
+.footer__year {
+  color: #fff;
+  @include font(20px, june);
+  border-radius: 5px;
+  background: hsla(0,0,65, .2);
+  padding: 7px 16px;
+}

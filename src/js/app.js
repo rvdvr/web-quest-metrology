@@ -33,4 +33,43 @@ $(document).ready(function () {
       return false;
     });
   }());
+
+  $(function (){
+
+  var accordionList = $(".accordion__list");
+
+  if (accordionList.length) {
+
+    $('.accordion__trigger').on('click', function(e) {
+
+      var
+          $this = $(this),
+          container = $this.closest('.accordion'),
+          item = $this.closest('.accordion__item'),
+          currentContent = item.find('.accordion__content')
+          duration = 200;
+
+      if (!item.hasClass('accordion__item_active')) {
+
+          item.addClass('accordion__item_active')
+          .siblings()
+          .removeClass('accordion__item_active')
+          .find('.accordion__content')
+          .slideUp();
+
+          $this.addClass('accordion__trigger_active')
+          .parent()
+          .siblings()
+          .children()
+          .removeClass('accordion__trigger_active');
+
+          currentContent.stop(true, true).slideDown(duration);
+      } else {
+          $this.css('border-color','transparent');
+          item.removeClass('accordion__item_active');
+          currentContent.stop(true, true).slideUp(duration);
+      }
+    });
+  };
+}());
 });
