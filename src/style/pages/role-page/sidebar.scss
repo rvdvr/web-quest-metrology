@@ -1,0 +1,19 @@
+.role-page__sidebar {
+  width: 25%;
+  padding-top: 66px;
+}
+
+.sidebar__item {
+  margin-bottom: 25px;
+}
+
+.sidebar__link {
+  color: $red;
+  @include font(19px, open-reg);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .25s;
+  &:hover {
+    color: $blue-main;
+  }
+}

@@ -1,0 +1,22 @@
+.role-page__content {
+  width: 65%;
+}
+
+.content__title {
+  color: $orange;
+  @include font(30px, nautil);
+  margin: 0 0 30px 20px;
+}
+
+.cards__item {
+  background: #fff;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 10px hsla(0,0,0, .16);
+
+  p {
+    color: #1A1A1A;
+    @include font(18px, open-reg);
+    line-height: 1.62;
+  }
+}

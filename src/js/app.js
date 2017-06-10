@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //hamburger-button
   $(function () {
     $('.common-menu__btn').on('click', function () {
       $('.common-menu__sidebar').addClass('common-menu__sidebar_active');
@@ -34,42 +35,42 @@ $(document).ready(function () {
     });
   }());
 
-  $(function (){
+  $(function () {
 
-  var accordionList = $(".accordion__list");
+    var accordionList = $(".accordion__list");
 
-  if (accordionList.length) {
+    if (accordionList.length) {
 
-    $('.accordion__trigger').on('click', function(e) {
+      $('.accordion__trigger').on('click', function(e) {
 
-      var
-          $this = $(this),
-          container = $this.closest('.accordion'),
-          item = $this.closest('.accordion__item'),
-          currentContent = item.find('.accordion__content')
-          duration = 200;
+        var
+            $this = $(this),
+            container = $this.closest('.accordion'),
+            item = $this.closest('.accordion__item'),
+            currentContent = item.find('.accordion__content')
+            duration = 200;
 
-      if (!item.hasClass('accordion__item_active')) {
+        if (!item.hasClass('accordion__item_active')) {
 
-          item.addClass('accordion__item_active')
-          .siblings()
-          .removeClass('accordion__item_active')
-          .find('.accordion__content')
-          .slideUp();
+            item.addClass('accordion__item_active')
+            .siblings()
+            .removeClass('accordion__item_active')
+            .find('.accordion__content')
+            .slideUp();
 
-          $this.addClass('accordion__trigger_active')
-          .parent()
-          .siblings()
-          .children()
-          .removeClass('accordion__trigger_active');
+            $this.addClass('accordion__trigger_active')
+            .parent()
+            .siblings()
+            .children()
+            .removeClass('accordion__trigger_active');
 
-          currentContent.stop(true, true).slideDown(duration);
-      } else {
-          $this.css('border-color','transparent');
-          item.removeClass('accordion__item_active');
-          currentContent.stop(true, true).slideUp(duration);
-      }
-    });
-  };
-}());
+            currentContent.stop(true, true).slideDown(duration);
+        } else {
+            $this.removeClass('accordion__trigger_active');
+            item.removeClass('accordion__item_active');
+            currentContent.stop(true, true).slideUp(duration);
+        }
+      });
+    };
+  }());
 });

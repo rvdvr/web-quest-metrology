@@ -1,0 +1,33 @@
+.role-page {
+  min-height: 100vh;
+  background: $white;
+  padding: 65px 0;
+  box-sizing: border-box;
+}
+
+.role-page__title {
+  color: $blue-main;
+  @include font(45px, june);
+  text-align: center;
+  margin-bottom: 80px;
+  &:after {
+    content: "";
+    width: 200px;
+    height: 7px;
+    background: $blue-main;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -98px;
+    top: 60px;
+  }
+}
+
+.role-page__wrapp {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
